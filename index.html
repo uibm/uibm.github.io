@@ -1,264 +1,444 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <title>Hello, I'm Ujjwal</title>
-    <link href="./style.css" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ujjwal Kumar — Senior Cloud Developer</title>
+<meta name="description" content="Ujjwal Kumar — Senior Cloud Developer. Terraform, Go, Java, cloud-native systems." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav-menu">
-                <a href="#about" class="nav-link active">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="about" class="section active">
-            <div id="scene-container"></div>
-        </section>
+<!-- Top nav -->
+<header class="topbar" data-reveal>
+  <a href="#home" class="brand" id="brand-link">
+    <span class="dot" aria-hidden="true"></span>
+    <span>Ujjwal Kumar</span>
+  </a>
+  <nav>
+    <ul class="nav-menu">
+      <a href="#about" class="nav-link active">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </ul>
+  </nav>
+  <div class="top-utils">
+    <button id="open-palette" class="icon-btn" title="Command palette">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <kbd>⌘ K</kbd>
+    </button>
+    <button id="theme-toggle" class="icon-btn" title="Toggle theme" aria-label="Toggle theme">
+      <svg id="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      <svg id="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+  </div>
+</header>
 
-        <section id="experience" class="section">
-          <div class="timeline-container">
-              <ul class="timeline">
-                  <!-- IBM -->
-                  <li class="timeline-item">
-                      <div class="timeline-content">
-                          <div class="timeline-date">2021 - Present</div>
-                          <h3 class="timeline-title">IBM India</h3>
-                          <div class="timeline-role">Senior Cloud Developer</div>
-                          <ul class="timeline-details">
-                              <li>Terraform provider and packer development for IBM cloud (opensource)</li>
-                              <li>Go, Node, Python and Java SDK development</li>
-                              <li>Cloud architecture and OpenAPI specification</li>
-                          </ul>
-                      </div>
-                  </li>
-      
-                  <!-- Techmojo -->
-                  <li class="timeline-item">
-                      <div class="timeline-content">
-                          <div class="timeline-date">2020 - 2021</div>
-                          <h3 class="timeline-title">Techmojo Solutions</h3>
-                          <div class="timeline-role">Senior Software Developer</div>
-                          <ul class="timeline-details">
-                              <li>Gaming domain development</li>
-                              <li>Payment and promotion modules</li>
-                              <li>Node.js, Python, Spring Boot microservices</li>
-                          </ul>
-                      </div>
-                  </li>
-      
-                  <!-- Virtusa -->
-                  <li class="timeline-item">
-                      <div class="timeline-content">
-                          <div class="timeline-date">2019 - 2020</div>
-                          <h3 class="timeline-title">Virtusa Corporation</h3>
-                          <div class="timeline-role">Senior Software Engineer</div>
-                          <ul class="timeline-details">
-                              <li>Spring Boot microservices on private cloud (Cloud Foundry)</li>
-                              <li>Banking domain US client</li>
-                              <li>Led migration to event-driven architecture</li>
-                          </ul>
-                      </div>
-                  </li>
-      
-                  <!-- Deloitte -->
-                  <li class="timeline-item">
-                      <div class="timeline-content">
-                          <div class="timeline-date">2017 - 2019</div>
-                          <h3 class="timeline-title">Deloitte Consulting</h3>
-                          <div class="timeline-role">Software Development Engineer</div>
-                          <ul class="timeline-details">
-                              <li>Cloud migration to Pivotal and AWS</li>
-                              <li>E-commerce microservices development</li>
-                              <li>Data science projects using Spring Boot, Kafka, JSP</li>
-                          </ul>
-                      </div>
-                  </li>
-      
-                  <!-- Infosys -->
-                  <li class="timeline-item">
-                      <div class="timeline-content">
-                          <div class="timeline-date">2015 - 2017</div>
-                          <h3 class="timeline-title">Infosys Ltd</h3>
-                          <div class="timeline-role">Software Development Engineer</div>
-                          <ul class="timeline-details">
-                              <li>Nia expert team - AI Platform</li>
-                              <li>Platform development using Java</li>
-                              <li>Automation tools and PMA creation</li>
-                          </ul>
-                      </div>
-                  </li>
-              </ul>
-          </div>
-      </section>
+<!-- Scroll rail -->
+<div class="rail" aria-hidden="true"><div class="rail-fill"></div></div>
 
-        <section id="skills" class="section">
-          <div class="skills-container">
-              <div class="skills-wrapper">
-                  <span class="skill-title title-large">Senior</span>
-                  <span class="skill-title title-mega">Cloud</span>
-                  <span class="skill-title title-medium">Developer</span>
-      
-                  <div class="skill-bubble languages-bubble">
-                      <span class="bubble-arrow"></span>
-                      <b><h3>LANGUAGES & FRAMEWORKS</h3></b>
-                      <ul>
-                          <li>Core Java, Advanced Java (JEE), Python, R Programming, Golang</li>
-                          <li>Terraform, Packer</li>
-                          <li>JSF (JSP, Servlets), Spring, Spring Boot</li>
-                          <li>Kafka, ELK</li>
-                          <li>Microservices architecture</li>
-                      </ul>
-                  </div>
-      
-                  <div class="skill-bubble cloud-bubble">
-                      <span class="bubble-arrow"></span>
-                      <b><h3>CLOUD & DEVOPS</h3></b>
-                      <ul>
-                          <li>AWS, PCF, GCP, Heroku, IBM Cloud</li>
-                          <li>CI/CD: Jenkins, Bamboo</li>
-                          <li>Version control: Git, Bitbucket</li>
-                          <li>Docker, Kubernetes</li>
-                          <li>Terraform, Packer</li>
-                      </ul>
-                  </div>
-      
-                  <div class="skill-bubble devops-bubble">
-                      <span class="bubble-arrow"></span>
-                      <b><h3>CONCEPTS & METHODOLOGIES</h3></b>
-                      <ul>
-                          <li>OOP, Data Structures</li>
-                          <li>Software Engineering Principles</li>
-                          <li>UML, Design Patterns (GoF)</li>
-                          <li>Domain-Driven Design (DDD)</li>
-                          <li>Agile/Scrum (Jira)</li>
-                      </ul>
-                  </div>
-      
-                  <div class="skill-bubble modern-bubble">
-                      <span class="bubble-arrow"></span>
-                      <b><h3>DATA & SCRIPTING</h3></b>
-                      <ul>
-                          <li>Data Science, Machine Learning</li>
-                          <li>R Programming</li>
-                          <li>HTML, CSS, JavaScript</li>
-                          <li>NodeJS, AngularJS</li>
-                          <li>Bash scripting</li>
-                      </ul>
-      
-                  <div class="skill-bubble frameworks-bubble">
-                      <span class="bubble-arrow"></span>
-                      <b><h3>GEN & RESPONSIBLE AI</h3></b>
-                      <ul>
-                          <li>Generative AI</li>
-                          <li>RAG (Retrieval-Augmented Generation)</li>
-                          <li>Responsible AI tools</li>
-                          <li>NLP</li>
-                          <li>AI model optimization</li>
-                      </ul>
-                  </div>
-      
-                  <div class="skill-bubble concepts-bubble">
-                      <span class="bubble-arrow"></span>
-                      <b><h3>TOOLS & TECHNOLOGIES</h3></b>
-                      <ul>
-                          <li>OpenAPI specifications</li>
-                          <li>CLI tools</li>
-                          <li>SDKs for Go, Java, Python, Node</li>
-                          <li>Cloud automation tools, Shell scripting</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </section>
+<main>
 
-      <section id="projects" class="section">
-        <div class="project-container">
-            <ul class="project-grid">
-                <li>
-                    <a href="#">
-                        <img src="/api/placeholder/200/200" alt="E-Com">
-                        <span class="project-name">E-Com</span>
-                    </a>
-                    <div class="project-details">
-                        <img src="/api/placeholder/500/300" alt="E-Com Screenshot">
-                        <div class="project-info">
-                            <h3>E-Com</h3>
-                            <p>Microservice based application, deployed on PCF</p>
-                            <div class="tech-stack">
-                                <span>Microservices</span>
-                                <span>PCF</span>
-                                <span>Cloud Native</span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-    
-                <li>
-                    <a href="#">
-                        <img src="/api/placeholder/200/200" alt="Ticket Routing">
-                        <span class="project-name">Ticket Routing Algorithm</span>
-                    </a>
-                    <div class="project-details">
-                        <img src="/api/placeholder/500/300" alt="Ticket Routing Screenshot">
-                        <div class="project-info">
-                            <h3>Ticket Routing Algorithm</h3>
-                            <p>Reduced Hops using Machine learning</p>
-                            <div class="tech-stack">
-                                <span>ML</span>
-                                <span>Python</span>
-                                <span>Data Science</span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+<!-- HOME: animation only -->
+<section id="home" class="section section-home" data-screen-label="01 Home">
+  <div id="scene-container" aria-hidden="true"></div>
+  <div class="home-scroll-hint" data-reveal>
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</section>
 
-    
-                <!-- More projects following same pattern -->
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="contact-container">
-          <h2 class="contact-heading">Get In Touch</h2>
-          
-          <div class="contact-content">
-              <div class="contact-info">
-                  <div class="contact-item">
-                      <span class="contact-label">Email</span>
-                      <a href="mailto:ramuklawjju@outlook.com" class="contact-value">ramuklawjju@outlook.com</a>
-                  </div>
-                  
-                  <div class="contact-item">
-                      <span class="contact-label">Medium</span>
-                      <a href="https://ramuklawjju.medium.com/" class="contact-value">https://ramuklawjju.medium.com/</a>
-                  </div>
-  
-                  <div class="contact-item">
-                      <span class="contact-label">LinkedIn</span>
-                      <a href="https://in.linkedin.com/in/ramuklawjju" class="contact-value">in.linkedin.com/in/ramuklawjju</a>
-                  </div>
-  
-                  <div class="contact-item">
-                      <span class="contact-label">GitHub</span>
-                      <a href="https://github.com/ujjwal-ibm" class="contact-value">github.com/ujjwal-ibm</a>
-                  </div>
-              </div>
-          </div>
+<!-- ABOUT -->
+<section id="about" class="section" data-screen-label="02 About">
+  <div class="about-grid">
+    <div class="about-wrap">
+      <span class="hero-kicker" data-reveal><span class="live"></span> Available during <span id="clock">Indian Standard Time</span></span>
+      <h1 class="hero-title" data-reveal>
+        Senior&nbsp;Cloud<br>
+        <em>Developer</em>
+      </h1>
+      <p class="hero-sub" data-reveal>
+        I build cloud infrastructure, IaaS and IaC at IBM - Terraform providers, polyglot SDKs (Go, Java, Python, Node), Packer, AI tooling, and the plumbing that makes cloud platforms feel coherent. Turning distributed systems into developer experience since 2015.
+      </p>
+      <div class="hero-meta" data-reveal>
+        <div><span>Based</span><b>Bengaluru, IN</b></div>
+        <div><span>Current</span><b>IBM India · Cloud</b></div>
+        <div><span>Focus</span><b>Cloud &amp; AI</b></div>
       </div>
-  </section>
-    </main>
+      <div class="hero-cta" data-reveal>
+        <a href="#projects" class="btn btn-primary" data-magnet>
+          See selected work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 17 11-11M9 6h8v8"/></svg>
+        </a>
+        <a href="#contact" class="btn" data-magnet>Get in touch</a>
+      </div>
+    </div>
 
-    <script src="./r128/three.min.js"></script>
-    <script src="./gsap/3.7.1/gsap.min.js"></script>
-    <script src="./script.js"></script>
+    <aside class="about-side" data-reveal>
+      <div class="side-card">
+        <div class="side-label">Currently</div>
+        <div class="side-title">Building IaaS & IaC at IBM Cloud</div>
+        <ul class="side-list">
+          <li><span class="sl-k">Open-source</span><span class="sl-v">IBM Cloud Terraform provider</span></li>
+          <li><span class="sl-k">Exploring</span><span class="sl-v">Agentic AI &amp; RAG in DevEx</span></li>
+          <li><span class="sl-k">Reading</span><span class="sl-v">Designing Data-Intensive Apps</span></li>
+          <li><span class="sl-k">Writing</span><span class="sl-v">Engineering notes on Medium</span></li>
+        </ul>
+      </div>
+
+      <div class="side-stats">
+        <div class="stat">
+          <div class="stat-num"><span id="years-stat">11</span>+</div>
+          <div class="stat-lbl">Years<br>shipping</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5</div>
+          <div class="stat-lbl">Engineering<br>orgs</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">∞</div>
+          <div class="stat-lbl">Problems<br>& Solutions</div>
+        </div>
+      </div>
+
+      <div class="side-stack">
+        <div class="side-label">Daily stack</div>
+        <div class="stack-chips">
+          <span>Go</span><span>Terraform</span><span>Gen AI</span><span>Prompts</span>
+          <span>Python</span><span>Java</span><span>Node</span><span>AWS</span><span>IBM Cloud</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section" data-screen-label="03 Experience">
+  <div class="xp-head" data-reveal>
+    <h2 class="xp-title">    <span id="years-count">Eleven</span> years,<br>five engineering orgs.</h2>
+    <div class="xp-years"><b>2015 → now</b><br>IBM · Techmojo · Virtusa · Deloitte · Infosys</div>
+  </div>
+  <ul class="timeline">
+    <li class="xp-item" data-open="true" data-reveal>
+      <div class="xp-date">2021 — Present</div>
+      <div class="xp-main">
+        <h3>IBM India <span class="xp-chevron">›</span></h3>
+        <div class="xp-role">Senior Cloud Developer</div>
+        <ul class="xp-details">
+          <li>Open-source Terraform provider and Packer development for IBM Cloud</li>
+          <li>Go, Node, Python and Java SDK development against OpenAPI specs</li>
+          <li>Cloud architecture &amp; API design across platform teams</li>
+        </ul>
+      </div>
+      <span class="xp-tag">Current</span>
+    </li>
+    <li class="xp-item" data-reveal>
+      <div class="xp-date">2020 — 2021</div>
+      <div class="xp-main">
+        <h3>Techmojo Solutions <span class="xp-chevron">›</span></h3>
+        <div class="xp-role">Senior Software Developer</div>
+        <ul class="xp-details">
+          <li>Gaming-domain backend development at scale</li>
+          <li>Payment &amp; promotion modules</li>
+          <li>Node.js, Python, Spring Boot microservices</li>
+        </ul>
+      </div>
+      <span class="xp-tag">Gaming</span>
+    </li>
+    <li class="xp-item" data-reveal>
+      <div class="xp-date">2019 — 2020</div>
+      <div class="xp-main">
+        <h3>Virtusa Corporation <span class="xp-chevron">›</span></h3>
+        <div class="xp-role">Senior Software Engineer</div>
+        <ul class="xp-details">
+          <li>Spring Boot microservices on Cloud Foundry</li>
+          <li>Banking domain, US client</li>
+          <li>Led migration to event-driven architecture</li>
+        </ul>
+      </div>
+      <span class="xp-tag">Banking</span>
+    </li>
+    <li class="xp-item" data-reveal>
+      <div class="xp-date">2017 — 2019</div>
+      <div class="xp-main">
+        <h3>Deloitte Consulting <span class="xp-chevron">›</span></h3>
+        <div class="xp-role">Software Development Engineer</div>
+        <ul class="xp-details">
+          <li>Cloud migrations to Pivotal &amp; AWS</li>
+          <li>E-commerce microservices build-out</li>
+          <li>Data-science work on Spring Boot, Kafka, JSP</li>
+        </ul>
+      </div>
+      <span class="xp-tag">E-commerce</span>
+    </li>
+    <li class="xp-item" data-reveal>
+      <div class="xp-date">2015 — 2017</div>
+      <div class="xp-main">
+        <h3>Infosys Ltd <span class="xp-chevron">›</span></h3>
+        <div class="xp-role">Software Development Engineer</div>
+        <ul class="xp-details">
+          <li>Nia expert team — AI platform development</li>
+          <li>Java platform engineering</li>
+          <li>Internal automation tools &amp; PMA</li>
+        </ul>
+      </div>
+      <span class="xp-tag">AI Platform</span>
+    </li>
+  </ul>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section" data-screen-label="04 Skills">
+  <h2 class="skill-intro" data-reveal>
+    Full-stack cloud engineering —<br>
+    <em>from kernel to keystroke.</em>
+  </h2>
+
+  <div class="skill-grid">
+    <article class="skill-card" data-reveal>
+      <h3>Languages &amp; Frameworks</h3>
+      <ul class="skill-tags">
+        <li>Java (Core/EE)</li><li>Python</li><li>Go</li><li>R</li>
+        <li>Spring Boot</li><li>JSF · JSP</li><li>Kafka</li><li>ELK</li>
+      </ul>
+    </article>
+
+    <article class="skill-card" data-reveal>
+      <h3>Cloud &amp; DevOps</h3>
+      <ul class="skill-tags">
+        <li>AWS</li><li>IBM Cloud</li><li>GCP</li><li>PCF</li><li>Heroku</li>
+        <li>Docker</li><li>Kubernetes</li><li>Jenkins</li><li>Bamboo</li>
+      </ul>
+    </article>
+
+    <article class="skill-card" data-reveal>
+      <h3>Infrastructure as Code</h3>
+      <ul class="skill-tags">
+        <li>Terraform</li><li>Packer</li><li>OpenAPI</li><li>CLI tooling</li>
+      </ul>
+    </article>
+
+    <article class="skill-card" data-reveal>
+      <h3>GenAI &amp; ML</h3>
+      <ul class="skill-tags">
+        <li>Generative AI</li><li>RAG</li><li>NLP</li><li>Responsible AI</li><li>Model optimization</li>
+      </ul>
+    </article>
+
+    <article class="skill-card" data-reveal>
+      <h3>Concepts &amp; Methods</h3>
+      <ul class="skill-tags">
+        <li>OOP</li><li>DS &amp; A</li><li>UML</li><li>GoF Patterns</li>
+        <li>DDD</li><li>Agile/Scrum</li>
+      </ul>
+    </article>
+
+    <article class="skill-card" data-reveal>
+      <h3>Web &amp; Scripting</h3>
+      <ul class="skill-tags">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>AngularJS</li><li>Bash</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section" data-screen-label="05 Projects">
+  <h2 class="skill-intro" data-reveal>
+    A few things I've<br>
+    <em>shipped &amp; maintained.</em>
+  </h2>
+
+  <ul class="proj-grid">
+    <li class="project-card" data-reveal>
+      <div class="thumb"><span>Architecture diagram</span></div>
+      <span class="arrow" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+      <h3>E-Com Microservices</h3>
+      <p>A microservice-based e-commerce backend deployed on Pivotal Cloud Foundry, with event-driven service boundaries.</p>
+      <div class="tech-stack"><span>Spring Boot</span><span>PCF</span><span>Kafka</span><span>Cloud-native</span></div>
+    </li>
+
+    <li class="project-card" data-reveal>
+      <div class="thumb"><span>ML pipeline visual</span></div>
+      <span class="arrow" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+      <h3>Ticket Routing Algorithm</h3>
+      <p>Reduced ticket hops using machine-learning classification — deployed as a production pipeline inside Nia.</p>
+      <div class="tech-stack"><span>Python</span><span>ML</span><span>NLP</span><span>Data Science</span></div>
+    </li>
+
+    <li class="project-card" data-reveal>
+      <div class="thumb"><span>Terraform provider graph</span></div>
+      <span class="arrow" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+      <h3>IBM Cloud Terraform Provider</h3>
+      <p>Open-source provider and Packer builder — resources, data sources, and acceptance tests across IBM Cloud services.</p>
+      <div class="tech-stack"><span>Go</span><span>Terraform</span><span>IaC</span><span>Open-source</span></div>
+    </li>
+
+    <li class="project-card" data-reveal>
+      <div class="thumb"><span>Polyglot SDK layers</span></div>
+      <span class="arrow" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+      <h3>Polyglot Cloud SDKs</h3>
+      <p>Go, Java, Python, and Node SDKs generated from OpenAPI — consistent ergonomics, auth, and retry semantics across stacks.</p>
+      <div class="tech-stack"><span>OpenAPI</span><span>Go</span><span>Java</span><span>Python</span><span>Node</span></div>
+    </li>
+
+    <li class="project-card" data-reveal>
+      <div class="thumb"><span>RAG pipeline sketch</span></div>
+      <span class="arrow" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+      <h3>Enterprise RAG Assistant</h3>
+      <p>Retrieval-augmented chat over internal docs — vector index, guardrails, and streaming answers with source citations.</p>
+      <div class="tech-stack"><span>LLM</span><span>RAG</span><span>Python</span><span>Vector DB</span></div>
+    </li>
+
+    <li class="project-card" data-reveal>
+      <div class="thumb"><span>Kafka event topology</span></div>
+      <span class="arrow" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+      <h3>Event-Driven Banking Core</h3>
+      <p>Migration of a monolithic banking platform to event-driven microservices — Kafka backbone, saga orchestration, idempotent consumers.</p>
+      <div class="tech-stack"><span>Kafka</span><span>Spring Boot</span><span>Sagas</span><span>CQRS</span></div>
+    </li>
+
+    <li class="project-card" data-reveal>
+      <div class="thumb"><span>K8s cluster topology</span></div>
+      <span class="arrow" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+      <h3>Kubernetes Platform Ops</h3>
+      <p>Internal developer platform on Kubernetes — Helm charts, GitOps delivery with ArgoCD, autoscaling and self-serve namespaces.</p>
+      <div class="tech-stack"><span>Kubernetes</span><span>Helm</span><span>ArgoCD</span><span>GitOps</span></div>
+    </li>
+
+    <li class="project-card" data-reveal>
+      <div class="thumb"><span>Observability dashboard</span></div>
+      <span class="arrow" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+      <h3>Observability Stack</h3>
+      <p>ELK + OpenTelemetry rollout across services — structured logs, traces, and RED/USE dashboards feeding on-call workflows.</p>
+      <div class="tech-stack"><span>ELK</span><span>OpenTelemetry</span><span>Grafana</span><span>SRE</span></div>
+    </li>
+
+    <li class="project-card" data-reveal>
+      <div class="thumb"><span>Payments flow diagram</span></div>
+      <span class="arrow" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+      <h3>Payments &amp; Promotions Engine</h3>
+      <p>High-throughput payments and promotion modules for a gaming platform — pluggable providers, rule-engine promotions, audit trail.</p>
+      <div class="tech-stack"><span>Node.js</span><span>Python</span><span>Redis</span><span>PostgreSQL</span></div>
+    </li>
+
+    <li class="project-card" data-reveal>
+      <div class="thumb"><span>CLI tool screenshot</span></div>
+      <span class="arrow" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+      <h3>Dev Experience CLI</h3>
+      <p>A single CLI that stitches scaffolding, local dev loops, and cloud deploys — adopted across multiple product teams.</p>
+      <div class="tech-stack"><span>Go</span><span>Cobra</span><span>DX</span><span>CLI</span></div>
+    </li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section" data-screen-label="06 Contact">
+  <h2 class="contact-head" data-reveal>
+    Have a problem worth solving?<br>
+    <em>Let's talk.</em>
+  </h2>
+
+  <div class="contact-grid">
+    <a class="contact-row" href="mailto:ramuklawjju@outlook.com" data-reveal>
+      <div>
+        <span class="label">Email</span>
+        <span class="val">ramuklawjju@outlook.com</span>
+      </div>
+      <span class="arrow">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+    </a>
+    <a class="contact-row" href="https://github.com/ujjwal-ibm" target="_blank" rel="noopener" data-reveal>
+      <div>
+        <span class="label">GitHub</span>
+        <span class="val">github.com/uibm</span>
+      </div>
+      <span class="arrow">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+    </a>
+    <a class="contact-row" href="https://in.linkedin.com/in/ramuklawjju" target="_blank" rel="noopener" data-reveal>
+      <div>
+        <span class="label">LinkedIn</span>
+        <span class="val">in.linkedin.com/in/ramuklawjju</span>
+      </div>
+      <span class="arrow">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+    </a>
+    <a class="contact-row" href="https://ramuklawjju.medium.com/" target="_blank" rel="noopener" data-reveal>
+      <div>
+        <span class="label">Writing</span>
+        <span class="val">ramuklawjju.medium.com</span>
+      </div>
+      <span class="arrow">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </span>
+    </a>
+  </div>
+
+  <div class="footer">
+    <span>© <span id="yr">2026</span> Ujjwal Kumar</span>
+    <span>Crafted with care · <b>Press ⌘K</b></span>
+  </div>
+</section>
+
+</main>
+
+<!-- Command palette -->
+<div id="palette" role="dialog" aria-label="Command palette">
+  <div class="palette-backdrop"></div>
+  <div class="palette-inner">
+    <input id="palette-input" type="text" placeholder="Type to search · navigate · open…" autocomplete="off">
+    <ul id="palette-list" role="listbox"></ul>
+  </div>
+</div>
+
+<script>
+  // Expand/collapse timeline items
+  document.addEventListener('click', (e) => {
+    const item = e.target.closest('.xp-item');
+    if (!item) return;
+    const cur = item.getAttribute('data-open') === 'true';
+    document.querySelectorAll('.xp-item').forEach(i => i.setAttribute('data-open', 'false'));
+    item.setAttribute('data-open', cur ? 'false' : 'true');
+  });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // Dynamic years of experience (in words)
+  const yrs = new Date().getFullYear() - 2015;
+  const words = ['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen','Twenty'];
+  const yc = document.getElementById('years-count');
+  const ys = document.getElementById('years-stat');
+  if (ys) ys.textContent = yrs;
+</script>
+<script src="./site.js?v=7" defer></script>
+<script src="./hero-scene.js?v=7" defer></script>
 </body>
 </html>
