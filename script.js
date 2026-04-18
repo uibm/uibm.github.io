@@ -290,7 +290,7 @@ function generateTargetPositions(textGeometry, centerOffset) {
 
 function createGoldenMaterial(envMap) {
     return new THREE.MeshStandardMaterial({
-        color: new THREE.Color(0x8B6914),
+        color: new THREE.Color("#000000"),
         metalness: 1.0,
         roughness: 0.05,
         envMap: envMap,
